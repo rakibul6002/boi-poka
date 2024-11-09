@@ -1,7 +1,7 @@
 import Baner from "../Baner/Baner";
 import Books from "../Books/Books";
 
-export default function home() {
+export default function Home() {
   return (
     <div>
         <Baner></Baner>
