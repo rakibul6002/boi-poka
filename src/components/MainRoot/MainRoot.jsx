@@ -11,7 +11,9 @@ export default function MainRoot() {
             <title>Boi Poka || Boi Poka</title>
         </Helmet>
         <div> 
-            <Navbar></Navbar>
+            <div className="sticky top-0 z-10">
+              <Navbar></Navbar>
+            </div>
             <Outlet></Outlet>
             <div className="mt-10">
                 <Footer></Footer>

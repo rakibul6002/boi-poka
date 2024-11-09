@@ -30,14 +30,16 @@ export default function Navbar() {
         </div>
         <div className="navbar-center hidden lg:flex">
             <nav className="flex gap-5">
-                <NavLink to={'/'}>Home</NavLink>
-                <NavLink to={'/listedBooks'}>Listed Books</NavLink>
+                <NavLink className={({ isActive }) =>
+              isActive ? 'text-red-700 underline' : 'text-black'} to={'/'}>Home</NavLink>
+                <NavLink className={({ isActive }) =>
+              isActive ? 'text-red-700 underline' : 'text-black'}  to={'/listedBooks'}>Listed Books</NavLink>
                 
             </nav>
         </div>
         <div className="navbar-end flex gap-2">
-            <a className="btn">Sign In</a>
-            <a className="btn">Sign Up</a>
+            <a className="btn btn-info">Sign In</a>
+            <a className="btn btn-warning">Sign Up</a>
         </div>
     </div>
   )
